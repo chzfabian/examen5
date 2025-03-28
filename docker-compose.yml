@@ -1,0 +1,10 @@
+services:
+  dockersito:  
+    image: oven/bun:1.2-alpine
+    working_dir: /app
+    volumes:    
+     - ./main.js:/app/main.js
+    stdin_open: true
+    tty: true
+    command: ["/bin/sh"]
+
